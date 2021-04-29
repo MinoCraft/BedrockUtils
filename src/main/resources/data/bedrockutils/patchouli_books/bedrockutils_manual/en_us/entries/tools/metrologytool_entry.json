@@ -1,0 +1,16 @@
+{
+	"name": "Metrology Tool",
+	"icon": "bedrockutils:metrology_tool",
+	"category": "tools_category",
+	"pages": [
+		{
+			"type": "text",
+			"text": "There is 2 modes on this tool. One is Block Rotate, allow you to rotate block when you right clicked on. The second is Take Measure Mode. In Take Mesure mode, you can right click on block, block coordinates show up in chat. If have no block above a plot will be placed. You can move around, coordinates above tools bars show you distance between your position and the first plot."
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:metrology_tool_recipe",
+			"text": "Right click on an other block to calculate differense between both blocks. Right click on block to remove plot "
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/walk_away_slab"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/walk_away_slab",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/walk_away_slab",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/walk_away_slab",
+      "y": 270
+    }
+  }
+}

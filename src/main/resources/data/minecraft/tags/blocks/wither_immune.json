@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockutils:block_bedrock",
+    "bedrockutils:block_bedrock_wither",
+    "bedrockutils:block_bedrock_stair",
+    "bedrockutils:block_bedrock_slab",
+    "bedrockutils:block_bedrock_fence",
+    "bedrockutils:block_bedrock_wall",
+    "bedrockutils:block_bedrock_pane",
+    "bedrockutils:block_bedrock_framed"
+  ]
+}

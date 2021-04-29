@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bedrockutils:block/block_bedrock_framed"
+    }
+  }
+}

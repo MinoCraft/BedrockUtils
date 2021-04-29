@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bedrockutils:blocks/blast_furnace_top",
+    "up": "bedrockutils:blocks/utilitary_comparatorextender",
+    "north": "bedrockutils:blocks/utilitary_headstoragemk1_front",
+    "east": "bedrockutils:blocks/utilitary_sideup",
+    "south": "bedrockutils:blocks/utilitary_sideup",
+    "west": "bedrockutils:blocks/utilitary_sideup",
+    "particle": "bedrockutils:blocks/blast_furnace_top"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_concrete_powder"
+    },
+    "1": {
+      "tag": "minecraft:wool"
+    },
+    "2": {
+      "item": "minecraft:white_concrete_powder"
+    },
+    "3": {
+      "tag": "minecraft:wool"
+    },
+    "4": {
+      "item": "bedrockutils:bedrock_fragment"
+    },
+    "5": {
+      "tag": "minecraft:wool"
+    },
+    "6": {
+      "item": "minecraft:white_concrete_powder"
+    },
+    "7": {
+      "tag": "minecraft:wool"
+    },
+    "8": {
+      "item": "minecraft:white_concrete_powder"
+    }
+  },
+  "result": {
+    "item": "minecraft:sponge",
+    "count": 3
+  }
+}

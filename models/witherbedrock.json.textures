@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "bedrock",
+        "4": "utilitary_witherbedrock"
+      },
+      "name": "default"
+    }
+  }
+}

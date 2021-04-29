@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/witherbedrock",
+  "textures": {
+    "all": "bedrockutils:blocks/utilitary_witherbedrock",
+    "particle": "bedrockutils:blocks/utilitary_witherbedrock",
+    "1": "bedrockutils:blocks/bedrock",
+    "4": "bedrockutils:blocks/utilitary_witherbedrock"
+  }
+}

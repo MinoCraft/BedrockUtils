@@ -1,0 +1,16 @@
+{
+	"name": "Bedrock Breaker",
+	"icon": "bedrockutils:bedrock_breaker",
+	"category": "processmachine_category",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Used to break Bedrock to obtain Bedrock Fragment. Place next to a bedrock and apply redstone signal.You can automate bedrock fragment collection but Bedrock Breaker can only be pushed by piston. Does not working in End dimension."
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:bedrock_breaker_recipe",
+			"text": "Now you can break Bedrock !"
+		}
+	]
+}

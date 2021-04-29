@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "metrologytoolscreentexture",
+    "customModelName": "utilitaryplus_metrologytool:default",
+    "name": "Metrology Tool",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:BedrockUtils"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": true,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Mode: Opposite -> Flip block direction",
+      "mode: Take Measure -> Measure Distance",
+      "beetween two points"
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "MetrologyToolRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "MetrologyToolRightClickedOnBlock"
+    },
+    "onCrafted": {
+      "name": "MetrologyToolItemIsCraftedsmelted"
+    },
+    "onItemInUseTick": {
+      "name": "MetrologyToolItemInHandTick"
+    }
+  }
+}

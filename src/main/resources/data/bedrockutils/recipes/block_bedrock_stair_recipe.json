@@ -1,0 +1,9 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "bedrockutils:block_bedrock"
+  },
+  "result": "bedrockutils:block_bedrock_stair"
+}

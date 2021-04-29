@@ -1,0 +1,42 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "minecraft:redstone"
+    },
+    "2": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "bedrockutils:bedrock_fragment"
+    },
+    "5": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:redstone_torch"
+    },
+    "8": {
+      "tag": "forge:stained_glass_panes"
+    }
+  },
+  "result": {
+    "item": "bedrockutils:metrology_tool",
+    "count": 1
+  }
+}

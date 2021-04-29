@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:BedrockFragment"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Items.COMPARATOR"
+      },
+      {
+        "value": "Items.QUARTZ"
+      },
+      {
+        "value": "Items.REDSTONE"
+      },
+      {
+        "value": "CUSTOM:WalkAwayFrameSlab"
+      },
+      {
+        "value": "Items.REDSTONE"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:ComparatorExtended"
+    },
+    "name": "comparator_extended_recipe",
+    "namespace": "mod"
+  }
+}

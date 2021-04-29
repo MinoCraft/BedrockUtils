@@ -1,0 +1,8 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "bedrockutils:blocks/bedrock",
+    "top": "bedrockutils:blocks/bedrock",
+    "side": "bedrockutils:blocks/bedrock"
+  }
+}

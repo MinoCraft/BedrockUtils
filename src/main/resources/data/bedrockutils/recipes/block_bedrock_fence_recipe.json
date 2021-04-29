@@ -1,0 +1,9 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:stonecutting",
+  "count": 6,
+  "ingredient": {
+    "item": "bedrockutils:block_bedrock"
+  },
+  "result": "bedrockutils:block_bedrock_fence"
+}

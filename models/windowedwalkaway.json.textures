@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "blast_furnace_top",
+        "2": "decotop",
+        "3": "light_gray_stained_glass"
+      },
+      "name": "default"
+    }
+  }
+}

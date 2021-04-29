@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "metrologytoolscreentexture",
+        "1": "metrologytoolscreentexture"
+      },
+      "name": "default"
+    }
+  }
+}

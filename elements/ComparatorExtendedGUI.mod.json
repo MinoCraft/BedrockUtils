@@ -1,0 +1,92 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Extended Comparator",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Extended Comparator",
+          "x": 131,
+          "y": 43
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "",
+          "width": 120,
+          "height": 20,
+          "name": "inputSlot",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Select Slot:",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Select Slot:",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Selected Slot:",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Selected Slot:",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:selectedSlot>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:selectedSlot>",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Ok",
+          "onClick": {
+            "name": "ComparatorExtendedButtonValidSlot"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "Ok",
+          "x": 258,
+          "y": 71
+        }
+      }
+    ]
+  }
+}

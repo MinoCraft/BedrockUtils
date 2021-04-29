@@ -1,0 +1,38 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BlockBedrock"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockWither"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockStair"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockSlab"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockFence"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockWall"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockPane"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockFramed"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "wither_immune",
+    "namespace": "minecraft"
+  }
+}

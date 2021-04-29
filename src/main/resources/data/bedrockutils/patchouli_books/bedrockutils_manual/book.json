@@ -1,0 +1,9 @@
+{
+"name": "Bedrock Utils Manual",
+"landing_text": "Welcome in Bedrock Utils Manual",
+"model": "bedrockutils:bedrock_utils_manual",
+"creative_tab": "Misc",
+"custom_book_item": "bedrockutils:bedrock_utils_manual",
+"version": "0",
+"subtitle": "Version 0.3"
+}

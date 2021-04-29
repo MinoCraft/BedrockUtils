@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/walkaway",
+  "textures": {
+    "all": "bedrockutils:blocks/decotop",
+    "particle": "bedrockutils:blocks/decotop",
+    "0": "bedrockutils:blocks/decotop",
+    "1": "bedrockutils:blocks/blast_furnace_top"
+  }
+}

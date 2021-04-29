@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/bedrock_breaker"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/bedrock_breaker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/bedrock_breaker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/bedrock_breaker",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "bedrockutils:block/bedrock_breaker",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "bedrockutils:block/bedrock_breaker",
+      "x": 90
+    }
+  }
+}

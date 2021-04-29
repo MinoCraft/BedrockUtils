@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_enchanter"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_enchanter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_enchanter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_enchanter",
+      "y": 270
+    }
+  }
+}

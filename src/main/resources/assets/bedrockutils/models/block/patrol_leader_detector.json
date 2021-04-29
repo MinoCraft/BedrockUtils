@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/comparatorextender",
+  "textures": {
+    "all": "bedrockutils:blocks/utilitary_headstoragemk1_front",
+    "particle": "bedrockutils:blocks/utilitary_headstoragemk1_front",
+    "0": "bedrockutils:blocks/utilitary_comparatorextender",
+    "1": "bedrockutils:blocks/blast_furnace_top"
+  }
+}

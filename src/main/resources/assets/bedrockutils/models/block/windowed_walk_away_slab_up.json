@@ -1,0 +1,10 @@
+{
+  "parent": "bedrockutils:custom/windowedwalkaway",
+  "textures": {
+    "all": "bedrockutils:blocks/decotop",
+    "particle": "bedrockutils:blocks/decotop",
+    "1": "bedrockutils:blocks/blast_furnace_top",
+    "2": "bedrockutils:blocks/decotop",
+    "3": "bedrockutils:blocks/light_gray_stained_glass"
+  }
+}

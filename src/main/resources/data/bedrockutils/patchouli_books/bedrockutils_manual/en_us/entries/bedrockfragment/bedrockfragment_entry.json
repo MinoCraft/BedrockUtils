@@ -1,0 +1,12 @@
+{
+	"name": "Bedrock Breaker",
+	"icon": "bedrockutils:bedrock_fragment",
+	"category": "bedrockfragment_category",
+	"sortnum": 1,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Because Bedrock are heavy material, when you break it you just obtain a fragment.Bedrock Frament is the center component of Bedrock Utils.Use Bedrock Breaker to obtain with 30% chance of drop.Are you Lucky ?!"
+		}
+	]
+}

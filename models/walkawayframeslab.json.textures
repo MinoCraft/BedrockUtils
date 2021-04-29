@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "blast_furnace_top"
+      },
+      "name": "default"
+    }
+  }
+}

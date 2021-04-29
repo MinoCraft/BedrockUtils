@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "decotop",
+        "1": "blast_furnace_top"
+      },
+      "name": "default"
+    }
+  }
+}

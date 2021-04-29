@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bedrockutils:blocks/furnace_top",
+    "up": "bedrockutils:blocks/furnace_top",
+    "north": "bedrockutils:blocks/dispenser_front_vertical",
+    "east": "bedrockutils:blocks/utilitary_sideup",
+    "south": "bedrockutils:blocks/utilitary_sideup",
+    "west": "bedrockutils:blocks/utilitary_sideup",
+    "particle": "bedrockutils:blocks/furnace_top"
+  }
+}

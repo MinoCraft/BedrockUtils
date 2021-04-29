@@ -1,0 +1,16 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bedrockutils:worker_hammer"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "result": {
+    "item": "bedrockutils:bedrock_utils_manual",
+    "count": 1
+  }
+}

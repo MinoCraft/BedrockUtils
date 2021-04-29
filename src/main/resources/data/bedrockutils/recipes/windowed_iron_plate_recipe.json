@@ -1,0 +1,28 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "bedrockutils:worker_hammer"
+    },
+    {
+      "item": "bedrockutils:iron_plate"
+    },
+    {
+      "item": "bedrockutils:iron_plate"
+    },
+    {
+      "item": "minecraft:glass_pane"
+    },
+    {
+      "item": "bedrockutils:iron_plate"
+    },
+    {
+      "item": "bedrockutils:iron_plate"
+    }
+  ],
+  "result": {
+    "item": "bedrockutils:windowed_iron_plate",
+    "count": 4
+  }
+}

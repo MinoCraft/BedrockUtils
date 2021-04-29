@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/machine_frame",
+  "textures": {
+    "all": "bedrockutils:blocks/bedrock",
+    "particle": "bedrockutils:blocks/bedrock",
+    "0": "bedrockutils:blocks/iron_block",
+    "1": "bedrockutils:blocks/bedrock"
+  }
+}

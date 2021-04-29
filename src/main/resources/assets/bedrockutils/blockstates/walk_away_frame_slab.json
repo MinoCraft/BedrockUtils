@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "bedrockutils:block/walk_away_frame_slab"
+    }
+  }
+}

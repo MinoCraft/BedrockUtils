@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "utilitary_comparatorextender",
+        "1": "blast_furnace_top"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "bedrockutils:walk_away_frame"
+  },
+  "result": "bedrockutils:walk_away_frame_slab"
+}

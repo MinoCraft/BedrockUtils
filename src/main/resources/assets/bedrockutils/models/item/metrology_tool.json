@@ -1,0 +1,8 @@
+{
+  "parent": "bedrockutils:custom/utilitaryplus_metrologytool",
+  "textures": {
+    "0": "bedrockutils:blocks/metrologytoolscreentexture",
+    "1": "bedrockutils:blocks/metrologytoolscreentexture",
+    "particle": "bedrockutils:items/metrologytoolscreentexture"
+  }
+}

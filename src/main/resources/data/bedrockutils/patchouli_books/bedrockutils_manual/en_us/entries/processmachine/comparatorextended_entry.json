@@ -1,0 +1,16 @@
+{
+	"name": "Extended Comparator",
+	"icon": "bedrockutils:comparator_extended",
+	"category": "processmachine_category",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Check specific selected slot in container or machine and output redstone comparator signal based on item number and type in configured slot.$(br)Checked block must be back the orange arrow. Right Click to open GUI and configure slot, press button to save.$(br)You can place redstone comparator on blue side"
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:comparator_extended_recipe",
+			"text": "Extend Comparator Power!"
+		}
+	]
+}

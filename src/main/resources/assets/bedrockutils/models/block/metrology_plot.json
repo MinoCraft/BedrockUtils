@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/meterplot",
+  "textures": {
+    "all": "bedrockutils:blocks/metrology_plot_color2",
+    "particle": "bedrockutils:blocks/metrology_plot_color2",
+    "0": "bedrockutils:blocks/metrology_plot_color1",
+    "1": "bedrockutils:blocks/metrology_plot_color2"
+  }
+}

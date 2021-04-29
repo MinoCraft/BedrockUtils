@@ -1,0 +1,33 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "bedrockutils:worker_hammer"
+    },
+    "1": {
+      "item": "bedrockutils:iron_plate"
+    },
+    "3": {
+      "item": "bedrockutils:iron_plate"
+    },
+    "4": {
+      "tag": "forge:stained_glass_panes"
+    },
+    "5": {
+      "item": "bedrockutils:iron_plate"
+    },
+    "7": {
+      "item": "bedrockutils:iron_plate"
+    }
+  },
+  "result": {
+    "item": "bedrockutils:windowed_iron_plate",
+    "count": 4
+  }
+}

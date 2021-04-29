@@ -1,0 +1,29 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "bedrockutils:worker_hammer"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "tag": "minecraft:slabs"
+    },
+    "5": {
+      "tag": "minecraft:slabs"
+    }
+  },
+  "result": {
+    "item": "bedrockutils:walk_away_frame_slab",
+    "count": 4
+  }
+}

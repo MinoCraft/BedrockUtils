@@ -1,0 +1,16 @@
+{
+	"name": "Hammer Plate",
+	"icon": "bedrockutils:worker_hammer",
+	"category": "tools_category",
+	"sortnum": 4,
+	"pages": [
+		{
+			"type": "text",
+			"text": "Used to craft manualy differents plates. You can use it to remove plate on Covered WalkAway and Covered WalkAway Slab. Also you can move up and down Framed and Covered WalkAway Slab."
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:worker_hammer_recipe"
+		}
+	]
+}
