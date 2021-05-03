@@ -1,0 +1,106 @@
+{
+	"components": [		
+		{
+			"type": "text",
+			"text": "$(#C75FC4)Fire Protection:$()",
+			"x": 0,
+			"y": -8
+		},
+		{
+			"type": "text",
+			"text": "$(#5D2BEB )Level II$()",
+			"x": 0,
+			"y": -1
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":50,
+			"y":25
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":5,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:machine_enchanter",
+			"x":50,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":95,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":50,
+			"y":125
+		},
+		{
+			"type": "item",
+			"item": "minecraft:writable_book",
+			"x":50,
+			"y":58
+		},
+		{
+			"type": "text",
+			"text": "$(#40FF33)+ 20 lvl$()",
+			"x":47,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:bedrock_fragment",
+			"x":95,
+			"y":60
+		},
+		{
+			"type": "text",
+			"text": "East",
+			"x":95,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "minecraft:magma_block",
+			"x":5,
+			"y":60
+		},
+		{
+			"type": "text",
+			"text": "West",
+			"x":5,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "minecraft:lava_bucket",
+			"x":50,
+			"y":110
+		},
+		{
+			"type": "text",
+			"text": "South",
+			"x":50,
+			"y":140
+		},
+		{
+			"type": "item",
+			"item": "minecraft:blue_ice",
+			"x":50,
+			"y":10
+		},
+		{
+			"type": "text",
+			"text": "North",
+			"x":50,
+			"y":40
+		}
+	]
+}

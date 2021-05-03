@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bedrockutils:blocks/blockstructureerror",
+    "up": "bedrockutils:blocks/blockstructureerror",
+    "north": "bedrockutils:blocks/blockstructureerror",
+    "east": "bedrockutils:blocks/blockstructureerror",
+    "south": "bedrockutils:blocks/blockstructureerror",
+    "west": "bedrockutils:blocks/blockstructureerror",
+    "particle": "bedrockutils:blocks/blockstructureerror"
+  }
+}

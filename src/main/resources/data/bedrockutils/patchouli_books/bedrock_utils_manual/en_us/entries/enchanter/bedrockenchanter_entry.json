@@ -1,0 +1,25 @@
+{
+	"name": "Bedrock Enchanter",
+	"icon": "bedrockutils:machine_enchanter",
+	"category": "enchanter_category",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Use a writable book with differents items and few experience levels to obtain enchanted book with a selected enchantement. Bedrock Enchanter alone is useless, you need Pedestal to put infused item. Enchanter is multi block structure, you can sneak right-click on enchanter to visualise what is wrong."
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:machine_enchanter_recipe",
+			"text": "$(br2)Unfortunatly, Bedrock Enchanter have limit, you can only craft level I enchantement."
+		},
+		{
+			"type": "enchanterstructure_template"
+		},
+		{
+			"type": "text",
+			"text": "When all items required are in Pedestal, apply a redstone signal on Bedrock Enchanter to start infusion"
+		}
+		
+		
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"name": "Enchantment Lvl II",
+	"icon": "minecraft:enchanted_book",
+	"category": "enchanter_category",
+	"pages": [
+		{"type": "enchantement21recipe_template"},
+		{"type": "enchantement22recipe_template"},
+		{"type": "enchantement23recipe_template"},
+		{"type": "enchantement24recipe_template"},
+		{"type": "enchantement25recipe_template"},
+		{"type": "enchantement26recipe_template"},
+		{"type": "enchantement27recipe_template"},
+		{"type": "enchantement28recipe_template"},
+		{"type": "enchantement29recipe_template"},
+		{"type": "enchantement210recipe_template"},
+		{"type": "enchantement211recipe_template"},
+		{"type": "enchantement212recipe_template"},
+		{"type": "enchantement213recipe_template"}
+		
+	]
+}

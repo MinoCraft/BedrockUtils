@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "bedrockutils_pedestal_main",
+        "1": "bedrockutils_pedestal_bottom",
+        "2": "glowstone",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

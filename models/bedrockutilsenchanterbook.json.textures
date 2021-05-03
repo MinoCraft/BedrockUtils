@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "bedrockutils_enchanter_main",
+        "2": "utilitary_witherbedrock",
+        "3": "bedrockutils_enchanter_book",
+        "missing": ""
+      },
+      "name": "default"
+    }
+  }
+}

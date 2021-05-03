@@ -1,0 +1,18 @@
+{
+	"name": "Ominous Detector",
+	"icon": "bedrockutils:patrol_leader_detector",
+	"category": "processmachine_category",
+	"pages": [
+		
+		
+		{
+			"type": "spotlight",
+			"item": "bedrockutils:patrol_leader_detector",
+			"title": "Ominous Detector",
+			"text": "Ominous Detector give ability to detect Pillager with banner in your back$(br)The machine can output two differents redstone signals when comparator is place next to it. Pillager without banner will output a signal of power of one, and with banner it will output a signal of two.$(br)Need redstone signal to work!"
+		},
+		{
+			"type": "enchanterominousrecipe_template"
+		}
+	]
+}

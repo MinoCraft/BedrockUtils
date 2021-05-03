@@ -29,15 +29,19 @@ public class MetrologyToolItemInHandTickProcedure extends BedrockutilsModElement
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 0)) {
-			(itemstack).getOrCreateTag().putBoolean("setOppositeMode", (true));
-			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (false));
-			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (false));
-		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 1)) {
-			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (true));
 			(itemstack).getOrCreateTag().putBoolean("setOppositeMode", (false));
+			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (false));
+			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (true));
+		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 1)) {
+			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (false));
+			(itemstack).getOrCreateTag().putBoolean("setOppositeMode", (true));
 			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (false));
 		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 2)) {
-			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (true));
+			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (false));
+			(itemstack).getOrCreateTag().putBoolean("setOppositeMode", (false));
+			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (true));
+		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 3)) {
+			(itemstack).getOrCreateTag().putBoolean("setDisabledMode", (false));
 			(itemstack).getOrCreateTag().putBoolean("setOppositeMode", (false));
 			(itemstack).getOrCreateTag().putBoolean("setMesureMode", (false));
 		}

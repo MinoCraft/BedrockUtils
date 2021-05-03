@@ -15,7 +15,7 @@ public class BedrockUtilsManualItem extends BedrockutilsModElements.ModElement {
 	@ObjectHolder("bedrockutils:bedrock_utils_manual")
 	public static final Item block = null;
 	public BedrockUtilsManualItem(BedrockutilsModElements instance) {
-		super(instance, 95);
+		super(instance, 99);
 	}
 
 	@Override

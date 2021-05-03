@@ -1,0 +1,18 @@
+{
+	"name": "Analogic Comparator",
+	"icon": "bedrockutils:logic_block_analogic_comparator_on",
+	"category": "processmachine_category",
+	"pages": [
+		
+		
+		{
+			"type": "spotlight",
+			"item": "bedrockutils:logic_block_analogic_comparator",
+			"title": "Analogic Comparator",
+			"text": "Analogic Comparator is block who analyse redstone signal on back side.$(br)When you place the block power default value is 1. To setting it, on interface and presse button.Comparator must be placed on one of other side to output signal." 
+		},
+		{
+			"type": "enchanteranalogicrecipe_template"
+		}
+	]
+}

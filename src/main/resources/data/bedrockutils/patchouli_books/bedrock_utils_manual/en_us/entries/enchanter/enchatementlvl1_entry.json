@@ -1,0 +1,21 @@
+{
+	"name": "Enchantment Lvl I",
+	"icon": "minecraft:enchanted_book",
+	"category": "enchanter_category",
+	"pages": [
+		{"type": "enchantement11recipe_template"},
+		{"type": "enchantement12recipe_template"},
+		{"type": "enchantement13recipe_template"},
+		{"type": "enchantement14recipe_template"},
+		{"type": "enchantement15recipe_template"},
+		{"type": "enchantement16recipe_template"},
+		{"type": "enchantement17recipe_template"},
+		{"type": "enchantement18recipe_template"},
+		{"type": "enchantement19recipe_template"},
+		{"type": "enchantement110recipe_template"},
+		{"type": "enchantement111recipe_template"},
+		{"type": "enchantement112recipe_template"},
+		{"type": "enchantement113recipe_template"}
+		
+	]
+}

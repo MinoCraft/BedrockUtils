@@ -1,0 +1,36 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "bedrockutils:bedrock_fragment"
+    },
+    "3": {
+      "item": "minecraft:gold_ingot"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "minecraft:gold_ingot"
+    },
+    "6": {
+      "item": "bedrockutils:block_bedrock"
+    },
+    "7": {
+      "tag": "minecraft:anvil"
+    },
+    "8": {
+      "item": "bedrockutils:block_bedrock"
+    }
+  },
+  "result": {
+    "item": "bedrockutils:block_bedrock_pedestal",
+    "count": 2
+  }
+}

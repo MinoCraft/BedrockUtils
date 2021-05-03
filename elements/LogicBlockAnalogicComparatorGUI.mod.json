@@ -1,0 +1,95 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Analogic Comparator",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Analogic Comparator",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "-",
+          "onClick": {
+            "name": "LogicBlockAnalogicComparatorButton1"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "-",
+          "x": 141,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "onClick": {
+            "name": "LogicBlockAnalogicComparatorButton2"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:selectedSignal>",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:selectedSignal>",
+          "x": 204,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Input Power:",
+          "color": {
+            "value": -10092442,
+            "falpha": 0.0
+          },
+          "name": "Input Power:",
+          "x": 141,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:signalInput>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:signalInput>",
+          "x": 204,
+          "y": 152
+        }
+      }
+    ]
+  }
+}

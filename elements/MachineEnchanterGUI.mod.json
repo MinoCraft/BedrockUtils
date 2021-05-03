@@ -13,12 +13,12 @@
       {
         "type": "label",
         "data": {
-          "text": "Enchanter",
+          "text": "<BNBT:text:blockName>",
           "color": {
             "value": -10092442,
             "falpha": 0.0
           },
-          "name": "Enchanter",
+          "name": "<BNBT:text:blockName>",
           "x": 131,
           "y": 43
         }

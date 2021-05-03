@@ -1,0 +1,11 @@
+{
+  "parent": "bedrockutils:custom/bedrockutilspedestal",
+  "textures": {
+    "all": "bedrockutils:blocks/bedrockutils_pedestal_main",
+    "particle": "bedrockutils:blocks/bedrockutils_pedestal_main",
+    "0": "bedrockutils:blocks/bedrockutils_pedestal_main",
+    "1": "bedrockutils:blocks/bedrockutils_pedestal_bottom",
+    "2": "bedrockutils:blocks/glowstone",
+    "missing": "bedrockutils:blocks/"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "group": "bedrockutils",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:gold_ingot"
+    },
+    "1": {
+      "item": "minecraft:writable_book"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    },
+    "3": {
+      "item": "bedrockutils:block_bedrock_wither"
+    },
+    "4": {
+      "item": "minecraft:enchanting_table"
+    },
+    "5": {
+      "item": "bedrockutils:block_bedrock_wither"
+    },
+    "6": {
+      "item": "minecraft:gold_ingot"
+    },
+    "7": {
+      "item": "minecraft:nether_star"
+    },
+    "8": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "result": {
+    "item": "bedrockutils:machine_enchanter",
+    "count": 1
+  }
+}

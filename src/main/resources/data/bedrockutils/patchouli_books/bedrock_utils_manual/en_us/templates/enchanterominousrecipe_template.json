@@ -1,0 +1,108 @@
+{
+	"components": [		
+		{
+			"type": "text",
+			"text": "$(#C75FC4)Ominous Detector:$()",
+			"x": 0,
+			"y": -8
+		},
+		{
+			"type": "text",
+			"text": "$(#5D2BEB )Level IV$()",
+			"x": 0,
+			"y": -1
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":50,
+			"y":25
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":5,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:machine_enchanter",
+			"x":50,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":95,
+			"y":75
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_pedestal",
+			"x":50,
+			"y":125
+		},
+		{
+			"type": "item",
+			"item": "bedrockutils:block_bedrock_framed",
+			"x":50,
+			"y":58
+		},
+		{
+			"type": "text",
+			"text": "$(#40FF33)0 lvl$()",
+			"x":47,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "minecraft:light_weighted_pressure_plate",
+			"x":95,
+			"y":60
+		},
+		{
+			"type": "text",
+			"text": "East",
+			"x":95,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "minecraft:comparator",
+			"x":5,
+			"y":60
+		},
+		{
+			"type": "text",
+			"text": "West",
+			"x":5,
+			"y":90
+		},
+		{
+			"type": "item",
+			"item": "minecraft:white_banner",
+					"nbt": {display:{"Lore": ["\"Ominous Banner\""]}},
+			"x":50,
+			"y":110
+		},
+		{
+			"type": "text",
+			"text": "South",
+			"x":50,
+			"y":140
+		},
+		{
+			"type": "item",
+			"item": "minecraft:white_banner",
+					"nbt": {display:{"Lore": ["\"Ominous Banner\""]}},
+			"x":50,
+			"y":10
+		},
+		{
+			"type": "text",
+			"text": "North",
+			"x":50,
+			"y":40
+		}
+	]
+}

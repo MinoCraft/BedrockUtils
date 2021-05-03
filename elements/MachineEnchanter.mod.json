@@ -2,22 +2,22 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "blast_furnace_top",
+    "texture": "bedrockutils_enchanter_main",
     "textureTop": "utilitary_comparatorextender",
     "textureLeft": "utilitary_sideup",
     "textureFront": "utilitary_headstoragemk1_front",
     "textureRight": "utilitary_sideup",
     "textureBack": "utilitary_sideup",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "renderType": 2,
+    "customModelName": "bedrockutilsenchanterbook:default",
     "rotationMode": 1,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Machine Enchanter",
+    "name": "Bedrock Enchanter",
     "specialInfo": [],
     "hardness": 30.0,
     "resistance": 2000.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:BedrockUtils"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -50,11 +50,11 @@
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canProvidePower": true,
-    "lightOpacity": 255,
+    "lightOpacity": 0,
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -74,9 +74,9 @@
     "soundOnStep": {
       "value": "STONE"
     },
-    "luminance": 0,
+    "luminance": 10,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -103,11 +103,20 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "MachineEnchanterOnBlockRightClicked"
+    },
     "onBlockAdded": {
       "name": "MachineEnchanterBlockAdded"
     },
+    "onTickUpdate": {
+      "name": "MachineEnchanterUpdateTick"
+    },
     "onRedstoneOn": {
       "name": "MachineEnchanterRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "MachineEnchanterRedstoneOff"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:BedrockFragment"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Blocks.GLOWSTONE"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "CUSTOM:BlockBedrock"
+      },
+      {
+        "value": "Blocks.ANVIL"
+      },
+      {
+        "value": "CUSTOM:BlockBedrock"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:BlockBedrockPedestal"
+    },
+    "name": "block_bedrock_pedestal_recipe",
+    "namespace": "mod"
+  }
+}

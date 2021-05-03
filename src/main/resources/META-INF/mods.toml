@@ -26,6 +26,12 @@ authors="MinoCraft72"
 
 
 [[dependencies.bedrockutils]]
+    modId="just_enough_items"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bedrockutils]]
     modId="patchouli"
     mandatory=false
     versionRange="[0,)"

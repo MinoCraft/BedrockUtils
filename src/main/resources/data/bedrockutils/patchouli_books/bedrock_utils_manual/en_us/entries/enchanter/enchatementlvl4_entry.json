@@ -1,0 +1,10 @@
+{
+	"name": "Enchantment Lvl IV",
+	"icon": "minecraft:enchanted_book",
+	"category": "enchanter_category",
+	"pages": [
+		{"type": "enchanterominousrecipe_template"},
+		{"type": "enchanteranalogicrecipe_template"}
+		
+	]
+}

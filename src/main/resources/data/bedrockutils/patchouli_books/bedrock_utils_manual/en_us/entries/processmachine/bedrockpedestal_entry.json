@@ -1,0 +1,17 @@
+{
+	"name": "Bedrock Pedestal",
+	"icon": "bedrockutils:block_bedrock_pedestal",
+	"category": "processmachine_category",
+	"pages": [
+		{
+			"type": "text",
+			"text": "Used by Bedrock Enchanter"
+		},
+		{
+			"type": "crafting",
+			"recipe": "bedrockutils:block_bedrock_pedestal_recipe",
+			"title": ""
+		}
+		
+	]
+}

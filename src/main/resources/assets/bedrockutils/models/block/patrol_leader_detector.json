@@ -1,9 +1,12 @@
 {
-  "parent": "bedrockutils:custom/comparatorextender",
+  "parent": "block/cube",
   "textures": {
-    "all": "bedrockutils:blocks/utilitary_headstoragemk1_front",
-    "particle": "bedrockutils:blocks/utilitary_headstoragemk1_front",
-    "0": "bedrockutils:blocks/utilitary_comparatorextender",
-    "1": "bedrockutils:blocks/blast_furnace_top"
+    "down": "bedrockutils:blocks/furnace_top",
+    "up": "bedrockutils:blocks/furnace_top",
+    "north": "bedrockutils:blocks/bedrockutils_ominousdetectorside",
+    "east": "bedrockutils:blocks/bedrockutils_ominousdetectorside",
+    "south": "bedrockutils:blocks/bedrockutils_ominousdetectorside",
+    "west": "bedrockutils:blocks/bedrockutils_ominousdetectorside",
+    "particle": "bedrockutils:blocks/furnace_top"
   }
 }

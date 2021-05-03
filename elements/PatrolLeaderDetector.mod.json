@@ -2,22 +2,22 @@
   "_fv": 18,
   "_type": "block",
   "definition": {
-    "texture": "utilitary_headstoragemk1_front",
+    "texture": "furnace_top",
     "textureTop": "furnace_top",
-    "textureLeft": "utilitary_sideup",
-    "textureFront": "utilitary_headstoragemk1_front",
-    "textureRight": "utilitary_sideup",
-    "textureBack": "utilitary_sideup",
-    "renderType": 2,
-    "customModelName": "comparatorextender:default",
-    "rotationMode": 1,
+    "textureLeft": "bedrockutils_ominousdetectorside",
+    "textureFront": "bedrockutils_ominousdetectorside",
+    "textureRight": "bedrockutils_ominousdetectorside",
+    "textureBack": "bedrockutils_ominousdetectorside",
+    "renderType": 10,
+    "customModelName": "Normal",
+    "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -27,19 +27,19 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 3.9999999999999996,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Patrol Leader Detector",
+    "name": "Ominous Detector",
     "specialInfo": [],
-    "hardness": 10.0,
-    "resistance": 600.0,
+    "hardness": 15.0,
+    "resistance": 1000.0,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:BedrockUtils"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 20,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -86,12 +86,14 @@
     "particleAmount": 4,
     "hasInventory": true,
     "guiBoundTo": "SneackSlotGUI",
-    "openGUIOnRightClick": true,
+    "openGUIOnRightClick": false,
     "inventorySize": 1,
-    "inventoryStackSize": 64,
+    "inventoryStackSize": 15,
     "inventoryDropWhenDestroyed": false,
     "inventoryComparatorPower": true,
-    "inventoryOutSlotIDs": [],
+    "inventoryOutSlotIDs": [
+      0
+    ],
     "inventoryInSlotIDs": [
       0
     ],
@@ -105,6 +107,12 @@
     "fluidRestrictions": [],
     "onTickUpdate": {
       "name": "PatrolLeaderDetectorUpdateTick"
+    },
+    "onRedstoneOn": {
+      "name": "PatrolLeaderDetectorRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "PatrolLeaderDetectorRedstoneOff"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

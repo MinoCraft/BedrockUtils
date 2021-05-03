@@ -1,12 +1,11 @@
 {
-  "parent": "block/cube",
+  "parent": "bedrockutils:custom/bedrockutilsenchanterbook",
   "textures": {
-    "down": "bedrockutils:blocks/blast_furnace_top",
-    "up": "bedrockutils:blocks/utilitary_comparatorextender",
-    "north": "bedrockutils:blocks/utilitary_headstoragemk1_front",
-    "east": "bedrockutils:blocks/utilitary_sideup",
-    "south": "bedrockutils:blocks/utilitary_sideup",
-    "west": "bedrockutils:blocks/utilitary_sideup",
-    "particle": "bedrockutils:blocks/blast_furnace_top"
+    "all": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "particle": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "1": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "2": "bedrockutils:blocks/utilitary_witherbedrock",
+    "3": "bedrockutils:blocks/bedrockutils_enchanter_book",
+    "missing": "bedrockutils:blocks/"
   }
 }

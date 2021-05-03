@@ -1,0 +1,17 @@
+{
+	"name": "Enchantment Lvl III",
+	"icon": "minecraft:enchanted_book",
+	"category": "enchanter_category",
+	"pages": [
+		{"type": "enchantement31recipe_template"},
+		{"type": "enchantement32recipe_template"},
+		{"type": "enchantement33recipe_template"},
+		{"type": "enchantement34recipe_template"},
+		{"type": "enchantement35recipe_template"},
+		{"type": "enchantement36recipe_template"},
+		{"type": "enchantement37recipe_template"},
+		{"type": "enchantement38recipe_template"},
+		{"type": "enchantement39recipe_template"}
+		
+	]
+}

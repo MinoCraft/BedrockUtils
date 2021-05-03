@@ -31,21 +31,21 @@ public class MetrologyToolRightClickedInAirProcedure extends BedrockutilsModElem
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		if ((entity.isSneaking())) {
 			(itemstack).getOrCreateTag().putDouble("setToolMode", (((itemstack).getOrCreateTag().getDouble("setToolMode")) + 1));
-		}
-		if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) > 2)) {
-			(itemstack).getOrCreateTag().putDouble("setToolMode", 0);
-		}
-		if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 0)) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Opposite Wrench"), (true));
+			if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) > 2)) {
+				(itemstack).getOrCreateTag().putDouble("setToolMode", 0);
 			}
-		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 1)) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Take Measure"), (true));
-			}
-		} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 2)) {
-			if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
-				((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Disabled"), (true));
+			if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 0)) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Disabled"), (true));
+				}
+			} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 1)) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Opposite Wrench"), (true));
+				}
+			} else if ((((itemstack).getOrCreateTag().getDouble("setToolMode")) == 2)) {
+				if (entity instanceof PlayerEntity && !entity.world.isRemote()) {
+					((PlayerEntity) entity).sendStatusMessage(new StringTextComponent("Mode: Take Measure"), (true));
+				}
 			}
 		}
 	}

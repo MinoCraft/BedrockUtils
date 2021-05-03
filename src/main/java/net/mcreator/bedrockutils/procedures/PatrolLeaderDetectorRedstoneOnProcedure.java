@@ -1,9 +1,11 @@
 package net.mcreator.bedrockutils.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.block.BlockState;
 
-import net.mcreator.bedrockutils.block.SneakyBlockBlock;
 import net.mcreator.bedrockutils.BedrockutilsModElements;
 import net.mcreator.bedrockutils.BedrockutilsMod;
 
@@ -12,7 +14,7 @@ import java.util.Map;
 @BedrockutilsModElements.ModElement.Tag
 public class PatrolLeaderDetectorRedstoneOnProcedure extends BedrockutilsModElements.ModElement {
 	public PatrolLeaderDetectorRedstoneOnProcedure(BedrockutilsModElements instance) {
-		super(instance, 86);
+		super(instance, 120);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
@@ -40,8 +42,14 @@ public class PatrolLeaderDetectorRedstoneOnProcedure extends BedrockutilsModElem
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 2), (int) z))).getMaterial() == net.minecraft.block.material.Material.AIR)) {
-			world.setBlockState(new BlockPos((int) x, (int) (y + 2), (int) z), SneakyBlockBlock.block.getDefaultState(), 3);
+		if (!world.isRemote()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putBoolean("canWork", (true));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 	}
 }
