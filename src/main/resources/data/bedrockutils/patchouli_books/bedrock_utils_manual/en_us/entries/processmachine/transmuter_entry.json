@@ -1,0 +1,22 @@
+{
+	"name": "Transmutation Table",
+	"icon": "bedrockutils:machine_transmuter",
+	"category": "processmachine_category",
+	"pages": [
+		
+		
+		{
+			"type": "spotlight",
+			"item": "bedrockutils:machine_transmuter",
+			"title": "Transmutation Table",
+			"text": "You just reach the way to make Bedrockium Coal !$(br)To work, Transmutation Table need $(6)1000 RF/T $()to work $(br) One coal in each input slots inside machine. 16 coals max /slots$(br)Take 1 minute to process items" 
+		},
+		{
+			"type": "enchantertransmuterrecipe_template"
+		},
+		{
+			"type": "text",
+			"text": "Also, Transmutation Table need to place up level 150 and set a tower of 8 Framed Bedrock with a Diamond block above.$(br2)$(6)Sneak Right click on Transmutation Table to start helper!$() "
+		}
+	]
+}

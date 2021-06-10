@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockutils:bedrock_breaker",
+    "bedrockutils:patrol_leader_detector",
+    "bedrockutils:block_bedrock_pedestal",
+    "bedrockutils:machine_wither_maker",
+    "bedrockutils:machine_wireless_energy_transmiter",
+    "bedrockutils:machine_wireless_activator",
+    "bedrockutils:machine_enchanter",
+    "bedrockutils:machine_transmuter",
+    "bedrockutils:machine_wireless_redstone_reader"
+  ]
+}

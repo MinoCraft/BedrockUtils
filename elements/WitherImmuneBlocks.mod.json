@@ -28,6 +28,9 @@
       },
       {
         "value": "CUSTOM:BlockBedrockFramed"
+      },
+      {
+        "value": "CUSTOM:MachineWitherMaker"
       }
     ],
     "functions": [],

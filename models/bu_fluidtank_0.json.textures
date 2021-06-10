@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blast_furnace_top",
+        "1": "but_modularmachinedeco",
+        "3": "barrel_side"
+      },
+      "name": "default"
+    }
+  }
+}

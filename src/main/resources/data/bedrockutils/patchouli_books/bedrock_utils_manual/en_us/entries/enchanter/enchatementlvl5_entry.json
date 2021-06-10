@@ -1,0 +1,10 @@
+{
+	"name": "Enchantment Lvl V",
+	"icon": "minecraft:netherite_block",
+	"category": "enchanter_category",
+	"pages": [
+		{"type": "enchantertransmuterrecipe_template"},
+		{"type": "enchanterwithermakerrecipe_template"}
+		
+	]
+}

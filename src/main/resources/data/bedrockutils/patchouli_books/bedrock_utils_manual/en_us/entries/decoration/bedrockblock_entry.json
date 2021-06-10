@@ -1,11 +1,13 @@
 {
 	"name": "Bedrock",
-	"icon": "bedrockutils:block_bedrock",
+	"icon": "bedrockutils:block_bedrock_wither",
 	"category": "decoration_category",
 	"sortnum": 6,
 	"pages": [
 		{
-			"type": "text",
+			"type": "spotlight",
+			"item": "bedrockutils:block_bedrock",
+			"title": "Bedrock & Variants",
 			"text": "Craft your own Bedrock ! Wither Proof ! Block can be moved by piston or slime block.$(br) Also there is slab, stair, fence, wall & fence gate,use Stone Cutter to make them."
 		},
 		{

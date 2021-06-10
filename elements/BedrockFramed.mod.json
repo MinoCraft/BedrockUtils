@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BlockBedrockFramed"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockFramedPillar0"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockFramedPillar1"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockFramedPillar2"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "bedrock_framed",
+    "namespace": "mod"
+  }
+}

@@ -58,6 +58,15 @@ public class LogicBlockAnalogicComparatorOnRedstoneOffProcedure extends Bedrocku
 			if (world instanceof World)
 				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
+		if (!world.isRemote()) {
+			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putBoolean("rsEvent", (true));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+		}
 		{
 			TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
 			if (_ent != null) {

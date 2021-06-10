@@ -11,6 +11,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.common.capabilities.Capability;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -55,7 +56,6 @@ import net.minecraft.fluid.Fluids;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.PushReaction;
@@ -118,20 +118,10 @@ public class ComparatorExtendedBlock extends BedrockutilsModElements.ModElement 
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(20f, 600f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(20f, 1000f).setLightLevel(s -> 0)
+					.harvestLevel(2).harvestTool(ToolType.PICKAXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
 			setRegistryName("comparator_extended");
-		}
-
-		@Override
-		@OnlyIn(Dist.CLIENT)
-		public void addInformation(ItemStack itemstack, IBlockReader world, List<ITextComponent> list, ITooltipFlag flag) {
-			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("Compare a single slot in storage."));
-			list.add(new StringTextComponent("First Slot = Slot 0 in config"));
-			list.add(new StringTextComponent("Be sure config is less than the max"));
-			list.add(new StringTextComponent("slot number"));
 		}
 
 		@Override
@@ -144,13 +134,13 @@ public class ComparatorExtendedBlock extends BedrockutilsModElements.ModElement 
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 16, 0, 4, 0));
+					return VoxelShapes.or(makeCuboidShape(16, 0, 16, 0, 8, 0));
 				case NORTH :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 4, 16));
+					return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 8, 16));
 				case EAST :
-					return VoxelShapes.or(makeCuboidShape(16, 0, 0, 0, 4, 16));
+					return VoxelShapes.or(makeCuboidShape(16, 0, 0, 0, 8, 16));
 				case WEST :
-					return VoxelShapes.or(makeCuboidShape(0, 0, 16, 16, 4, 0));
+					return VoxelShapes.or(makeCuboidShape(0, 0, 16, 16, 8, 0));
 			}
 		}
 
@@ -211,7 +201,7 @@ public class ComparatorExtendedBlock extends BedrockutilsModElements.ModElement 
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -255,7 +245,7 @@ public class ComparatorExtendedBlock extends BedrockutilsModElements.ModElement 
 				$_dependencies.put("world", world);
 				ComparatorExtendedUpdateTickProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 		}
 
 		@Override
@@ -385,7 +375,7 @@ public class ComparatorExtendedBlock extends BedrockutilsModElements.ModElement 
 
 		@Override
 		public ITextComponent getDisplayName() {
-			return new StringTextComponent("Comparator Extended");
+			return new StringTextComponent("Extended Comparator");
 		}
 
 		@Override

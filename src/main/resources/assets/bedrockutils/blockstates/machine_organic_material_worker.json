@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_organic_material_worker"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_organic_material_worker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_organic_material_worker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_organic_material_worker",
+      "y": 270
+    }
+  }
+}

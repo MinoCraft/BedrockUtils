@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/logic_block_analogic_comparator_half"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/logic_block_analogic_comparator_half",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/logic_block_analogic_comparator_half",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/logic_block_analogic_comparator_half",
+      "y": 270
+    }
+  }
+}

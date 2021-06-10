@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockutils:fluid_tank",
+    "bedrockutils:fluid_tank_0",
+    "bedrockutils:fluid_tank_1",
+    "bedrockutils:fluid_tank_2"
+  ]
+}

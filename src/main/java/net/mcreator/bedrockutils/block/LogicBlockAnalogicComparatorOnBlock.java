@@ -67,7 +67,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnUpdateTickProcedure;
-import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnRedstoneOffProcedure;
+import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnNeighbourBlockChangesProcedure;
 import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnBlockRightClickedProcedure;
 import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnBlockAddedProcedure;
 import net.mcreator.bedrockutils.gui.SneackSlotGUIGui;
@@ -215,14 +215,14 @@ public class LogicBlockAnalogicComparatorOnBlock extends BedrockutilsModElements
 			int z = pos.getZ();
 			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
 			} else {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					LogicBlockAnalogicComparatorOnRedstoneOffProcedure.executeProcedure($_dependencies);
-				}
+			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LogicBlockAnalogicComparatorOnNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
 			}
 		}
 

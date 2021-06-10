@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_pump_crate"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_pump_crate",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_pump_crate",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_pump_crate",
+      "y": 270
+    }
+  }
+}

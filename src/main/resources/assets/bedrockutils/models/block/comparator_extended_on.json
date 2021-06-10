@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/bu_extendedcomparatoron",
+  "textures": {
+    "all": "bedrockutils:blocks/utilitary_comparatorextender",
+    "particle": "bedrockutils:blocks/utilitary_comparatorextender",
+    "1": "bedrockutils:blocks/blast_furnace_top",
+    "2": "bedrockutils:blocks/bedrockutilsominousdetectordeco"
+  }
+}

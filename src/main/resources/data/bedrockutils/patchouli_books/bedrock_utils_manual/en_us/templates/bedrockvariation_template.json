@@ -6,135 +6,30 @@
 			"x": 0,
 			"y": -8
 		},
-		
-		
 		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock",
-			"x":5,
-			"y":10
+			"type": "stonecutting",
+			"recipe": "block_bedrock_wither_recipe"
 		},
 		{
-			"type": "item",
-			"item": "minecraft:stonecutter",
-			"x":33,
-			"y":10
+			"type": "stonecutting",
+			"recipe": "block_bedrock_stair_recipe"
 		},
 		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock_stair",
-			"x":60,
-			"y":10
+			"type": "stonecutting",
+			"recipe": "block_bedrock_slab_recipe"
 		},
 		{
-			"type": "text",
-			"text": "x1",
-			"x":78,
-			"y":13
+			"type": "stonecutting",
+			"recipe": "block_bedrock_wall_recipe"
+		},
+		{
+			"type": "stonecutting",
+			"recipe": "block_bedrock_fence_recipe"
+		},
+		{
+			"type": "stonecutting",
+			"recipe": "block_bedrock_pane_recipe"
 		},
 		
-		
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock",
-			"x":5,
-			"y":35
-		},
-		{
-			"type": "item",
-			"item": "minecraft:stonecutter",
-			"x":33,
-			"y":35
-		},
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock_slab",
-			"x":60,
-			"y":35
-		},
-		{
-			"type": "text",
-			"text": "x2",
-			"x":78,
-			"y":38
-		},
-		
-		
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock",
-			"x":5,
-			"y":60
-		},
-		{
-			"type": "item",
-			"item": "minecraft:stonecutter",
-			"x":33,
-			"y":60
-		},
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock_wall",
-			"x":60,
-			"y":60
-		},
-		{
-			"type": "text",
-			"text": "x4",
-			"x":78,
-			"y":63
-		},
-		
-		
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock",
-			"x":5,
-			"y":85
-		},
-		{
-			"type": "item",
-			"item": "minecraft:stonecutter",
-			"x":33,
-			"y":85
-		},
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock_fence",
-			"x":60,
-			"y":85
-		},
-		{
-			"type": "text",
-			"text": "x6",
-			"x":78,
-			"y":88
-		},
-		
-		
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock",
-			"x":5,
-			"y":120
-		},
-		{
-			"type": "item",
-			"item": "minecraft:stonecutter",
-			"x":33,
-			"y":120
-		},
-		{
-			"type": "item",
-			"item": "bedrockutils:block_bedrock_pane",
-			"x":60,
-			"y":120
-		},
-		{
-			"type": "text",
-			"text": "x8",
-			"x":78,
-			"y":123
-		}
 	]
 }

@@ -1,0 +1,149 @@
+{
+  "_fv": 18,
+  "_type": "block",
+  "definition": {
+    "texture": "cauldron_side",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "bu_omw_working:default",
+    "rotationMode": 1,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT_MIPPED",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
+      {
+        "mx": 1.5,
+        "my": 12.0,
+        "mz": 0.0,
+        "Mx": 14.5,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": true
+      }
+    ],
+    "name": "Organic Material Worker",
+    "specialInfo": [],
+    "hardness": 20.0,
+    "resistance": 2000.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "creativeTab": {
+      "value": "CUSTOM:BedrockUtils"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": true,
+    "lightOpacity": 0,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 5,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 3,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": true,
+    "guiBoundTo": "MachineOrganicMaterialWorkerGUI",
+    "openGUIOnRightClick": true,
+    "inventorySize": 8,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [
+      6,
+      7
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7
+    ],
+    "hasEnergyStorage": true,
+    "energyInitial": 0,
+    "energyCapacity": 1000000,
+    "energyMaxReceive": 30000,
+    "energyMaxExtract": 30000,
+    "isFluidTank": true,
+    "fluidCapacity": 10000,
+    "fluidRestrictions": [
+      {
+        "value": "CUSTOM:RawOrganicJuice"
+      }
+    ],
+    "onBlockAdded": {
+      "name": "MachineOrganicMaterialWorkerBlockAdded"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "MachineOrganicMaterialWorkerNeighbourBlockChanges"
+    },
+    "onTickUpdate": {
+      "name": "MachineOrganicMaterialWorkerUpdateTick"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "but_modularmachinedeco",
+        "3": "barrel_side"
+      },
+      "name": "default"
+    }
+  }
+}

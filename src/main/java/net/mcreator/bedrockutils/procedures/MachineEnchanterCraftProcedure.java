@@ -315,8 +315,18 @@ public class MachineEnchanterCraftProcedure extends BedrockutilsModElements.ModE
 																return tileEntity.getTileData().getString(tag);
 															return "";
 														}
-													}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "enchantementWanted")))
-															.equals("empty"))) {
+													}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "type"))).equals("internal"))) {
+														if (world instanceof World && !world.isRemote()) {
+															((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+																	(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+																			.getValue(new ResourceLocation("block.note_block.pling")),
+																	SoundCategory.NEUTRAL, (float) 1, (float) 1);
+														} else {
+															((World) world).playSound(x, y, z,
+																	(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+																			.getValue(new ResourceLocation("block.note_block.pling")),
+																	SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+														}
 														if (world instanceof World && !world.isRemote()) {
 															ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z,
 																	(BedrockutilsModVariables.WorldVariables.get(world).enchanterCraftedOutput));
@@ -342,7 +352,74 @@ public class MachineEnchanterCraftProcedure extends BedrockutilsModElements.ModE
 															if (world instanceof World)
 																((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 														}
-													} else {
+													} else if ((((new Object() {
+														public String getValue(IWorld world, BlockPos pos, String tag) {
+															TileEntity tileEntity = world.getTileEntity(pos);
+															if (tileEntity != null)
+																return tileEntity.getTileData().getString(tag);
+															return "";
+														}
+													}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "type"))).equals("external"))) {
+														if (world instanceof World && !world.isRemote()) {
+															((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+																	(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+																			.getValue(new ResourceLocation("block.note_block.pling")),
+																	SoundCategory.NEUTRAL, (float) 1, (float) 1);
+														} else {
+															((World) world).playSound(x, y, z,
+																	(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+																			.getValue(new ResourceLocation("block.note_block.pling")),
+																	SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
+														}
+														if (world instanceof ServerWorld) {
+															((World) world).getServer().getCommandManager().handleCommand(
+																	new CommandSource(ICommandSource.DUMMY, new Vector3d(x, y, z), Vector2f.ZERO,
+																			(ServerWorld) world, 4, "", new StringTextComponent(""),
+																			((World) world).getServer(), null).withFeedbackDisabled(),
+																	(("give @p ") + "" + ((new Object() {
+																		public String getValue(IWorld world, BlockPos pos, String tag) {
+																			TileEntity tileEntity = world.getTileEntity(pos);
+																			if (tileEntity != null)
+																				return tileEntity.getTileData().getString(tag);
+																			return "";
+																		}
+																	}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "craftModId"))) + ""
+																			+ (":") + "" + ((new Object() {
+																				public String getValue(IWorld world, BlockPos pos, String tag) {
+																					TileEntity tileEntity = world.getTileEntity(pos);
+																					if (tileEntity != null)
+																						return tileEntity.getTileData().getString(tag);
+																					return "";
+																				}
+																			}.getValue(world, new BlockPos((int) x, (int) y, (int) z),
+																					"craftName")))));
+														}
+														if (!world.isRemote()) {
+															BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+															TileEntity _tileEntity = world.getTileEntity(_bp);
+															BlockState _bs = world.getBlockState(_bp);
+															if (_tileEntity != null)
+																_tileEntity.getTileData().putBoolean("suckItemToEnchant", (false));
+															if (world instanceof World)
+																((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+														}
+														if (!world.isRemote()) {
+															BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+															TileEntity _tileEntity = world.getTileEntity(_bp);
+															BlockState _bs = world.getBlockState(_bp);
+															if (_tileEntity != null)
+																_tileEntity.getTileData().putBoolean("pulledXp", (false));
+															if (world instanceof World)
+																((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
+														}
+													} else if ((((new Object() {
+														public String getValue(IWorld world, BlockPos pos, String tag) {
+															TileEntity tileEntity = world.getTileEntity(pos);
+															if (tileEntity != null)
+																return tileEntity.getTileData().getString(tag);
+															return "";
+														}
+													}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "type"))).equals("enchantement"))) {
 														if (!world.isRemote()) {
 															BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 															TileEntity _tileEntity = world.getTileEntity(_bp);

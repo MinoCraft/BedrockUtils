@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "blast_furnace_top",
+        "1": "glass",
+        "2": "bu_wither_wip"
+      },
+      "name": "default"
+    }
+  }
+}

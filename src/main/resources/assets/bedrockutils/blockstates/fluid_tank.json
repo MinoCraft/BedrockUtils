@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/fluid_tank"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/fluid_tank",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/fluid_tank",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/fluid_tank",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/comparator_extended_on"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/comparator_extended_on",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/comparator_extended_on",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/comparator_extended_on",
+      "y": 270
+    }
+  }
+}

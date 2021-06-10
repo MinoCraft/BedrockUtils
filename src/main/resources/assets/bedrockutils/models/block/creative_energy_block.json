@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "up": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "north": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "east": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "south": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "west": "bedrockutils:blocks/bedrockutils_ominousdetectortop",
+    "particle": "bedrockutils:blocks/bedrockutils_ominousdetectortop"
+  }
+}

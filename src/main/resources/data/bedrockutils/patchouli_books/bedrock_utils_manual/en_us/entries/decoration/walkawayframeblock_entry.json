@@ -1,12 +1,14 @@
 {
-	"name": "Framed WalkAway",
+	"name": "WalkAway Blocks",
 	"icon": "bedrockutils:walk_away_frame",
 	"category": "decoration_category",
 	"sortnum": 2,
 	"pages": [
 		{
-			"type": "text",
-			"text": "Just a decorative block to support for Convoyor Belt.$(br) Also you can right click with an iron $(l:bedrockutils:misc/itemplate_entry)plate$() to make Covered Walk Away.$(br) Sneak + Right click with $(l:bedrockutils:tools/hammerplate_entry)Hammer Plate$() to remove it."
+			"type": "spotlight",
+			"item": "bedrockutils:walk_away_frame",
+			"title": "WalkAway Blocks",
+			"text": "$(br)Just a decorative block to support for Convoyor Belt.$(br) Also you can right click with an iron $(l:bedrockutils:misc/itemplate_entry)plate$() to make Covered Walk Away.$(br) Sneak + Right click with $(l:bedrockutils:tools/hammerplate_entry)Hammer Plate$() to remove it."
 		},
 		{
 			"type": "crafting",

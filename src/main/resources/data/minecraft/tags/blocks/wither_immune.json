@@ -8,6 +8,7 @@
     "bedrockutils:block_bedrock_fence",
     "bedrockutils:block_bedrock_wall",
     "bedrockutils:block_bedrock_pane",
-    "bedrockutils:block_bedrock_framed"
+    "bedrockutils:block_bedrock_framed",
+    "bedrockutils:machine_wither_maker"
   ]
 }

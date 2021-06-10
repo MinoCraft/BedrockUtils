@@ -54,7 +54,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 5,
     "tickRandomly": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
@@ -115,8 +115,11 @@
     "onBlockAdded": {
       "name": "LogicBlockAnalogicComparatorOnBlockAdded"
     },
-    "onRedstoneOn": {
-      "name": "LogicBlockAnalogicComparatorRedstoneOn"
+    "onNeighbourBlockChanges": {
+      "name": "LogicBlockAnalogicComparatorOnNeighbourBlockChanges"
+    },
+    "onTickUpdate": {
+      "name": "LogicBlockAnalogicComparatorOnUpdateTick"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

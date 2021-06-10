@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bedrockutils:block_bedrock_framed",
+    "bedrockutils:block_bedrock_framed_pillar_0",
+    "bedrockutils:block_bedrock_framed_pillar_1",
+    "bedrockutils:block_bedrock_framed_pillar_2"
+  ]
+}

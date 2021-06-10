@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_wither_maker"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_wither_maker",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_wither_maker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_wither_maker",
+      "y": 270
+    }
+  }
+}

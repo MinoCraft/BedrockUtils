@@ -17,12 +17,6 @@ authors="MinoCraft72"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.bedrockutils]]
-    modId="forge"
-    mandatory=true
-    versionRange="[36.1.0]"
-    ordering="NONE"
-    side="BOTH"
 
 
 [[dependencies.bedrockutils]]

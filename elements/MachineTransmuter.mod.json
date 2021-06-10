@@ -1,0 +1,152 @@
+{
+  "_fv": 18,
+  "_type": "block",
+  "definition": {
+    "texture": "bedrockutils_enchanter_main",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "bedrockutilstransmuter:default",
+    "rotationMode": 1,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "itemTexture": "",
+    "particleTexture": "",
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "SOLID",
+    "disableOffset": false,
+    "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 12.0,
+        "Mz": 16.0,
+        "subtract": false
+      }
+    ],
+    "name": "Transmutation Table",
+    "specialInfo": [],
+    "hardness": 20.0,
+    "resistance": 1000.0,
+    "hasGravity": false,
+    "isWaterloggable": true,
+    "creativeTab": {
+      "value": "CUSTOM:BedrockUtils"
+    },
+    "destroyTool": "pickaxe",
+    "customDrop": {
+      "value": ""
+    },
+    "dropAmount": 1,
+    "useLootTableForDrops": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canProvidePower": false,
+    "lightOpacity": 0,
+    "material": {
+      "value": "ROCK"
+    },
+    "tickRate": 10,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "colorOnMap": "DEFAULT",
+    "creativePickItem": {
+      "value": ""
+    },
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": {
+      "value": "STONE"
+    },
+    "luminance": 0,
+    "unbreakable": false,
+    "breakHarvestLevel": 3,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particleSpawningShape": "Spread",
+    "particleSpawningRadious": 0.5,
+    "particleAmount": 4,
+    "hasInventory": true,
+    "guiBoundTo": "MachineTransmuterGUI",
+    "openGUIOnRightClick": false,
+    "inventorySize": 16,
+    "inventoryStackSize": 16,
+    "inventoryDropWhenDestroyed": true,
+    "inventoryComparatorPower": true,
+    "inventoryOutSlotIDs": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "inventoryInSlotIDs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "hasEnergyStorage": true,
+    "energyInitial": 0,
+    "energyCapacity": 10000000,
+    "energyMaxReceive": 50000,
+    "energyMaxExtract": 50000,
+    "isFluidTank": false,
+    "fluidCapacity": 8000,
+    "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "MachineTransmuterOnBlockRightClicked"
+    },
+    "onBlockAdded": {
+      "name": "MachineTransmuterBlockAdded"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "MachineTransmuterNeighbourBlockChanges"
+    },
+    "onTickUpdate": {
+      "name": "MachineTransmuterUpdateTick"
+    },
+    "onRedstoneOn": {
+      "name": "MachineTransmuterRedstoneOn"
+    },
+    "onRedstoneOff": {
+      "name": "MachineTransmuterRedstoneOff"
+    },
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "blocksToReplace": [
+      {
+        "value": "Blocks.STONE"
+      }
+    ],
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

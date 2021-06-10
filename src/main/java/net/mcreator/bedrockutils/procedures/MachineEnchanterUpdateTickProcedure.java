@@ -145,6 +145,23 @@ public class MachineEnchanterUpdateTickProcedure extends BedrockutilsModElements
 					MachineEnchanterRecipeLvl4Procedure.executeProcedure($_dependencies);
 				}
 			}
+			if ((new Object() {
+				public boolean getValue(IWorld world, BlockPos pos, String tag) {
+					TileEntity tileEntity = world.getTileEntity(pos);
+					if (tileEntity != null)
+						return tileEntity.getTileData().getBoolean(tag);
+					return false;
+				}
+			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "enchanterlvl5"))) {
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					MachineEnchanterRecipeLvl5Procedure.executeProcedure($_dependencies);
+				}
+			}
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);

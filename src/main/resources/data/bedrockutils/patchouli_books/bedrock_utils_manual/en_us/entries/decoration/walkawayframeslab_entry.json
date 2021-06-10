@@ -1,12 +1,14 @@
 {
-	"name": "Framed WalkAway Slab",
+	"name": "WalkAway Slabs",
 	"icon": "bedrockutils:walk_away_frame_slab",
 	"category": "decoration_category",
 	"sortnum": 1,
 	"pages": [
 		{
-			"type": "text",
-			"text": "Just a decorative block to support Convoyor Belt for example.$(br) Also you can right click with an iron or glass $(l:bedrockutils:misc/itemplate_entry)plate$() to make Covered or Windowed WalkAway Slab.$(br) Sneak + Right click with an $(l:bedrockutils:tools/hammerplate_entry)Hammer Plate$() to remove.$(br) Right click with Hammer Plate to move down or up Framed or Covered WalkAway."
+			"type": "spotlight",
+			"item": "bedrockutils:walk_away_frame_slab",
+			"title": "WalkAway Slabs",
+			"text": "$(br)Just a decorative block to support Convoyor Belt for example.$(br) Also you can right click with an iron or glass $(l:bedrockutils:misc/itemplate_entry)plate$() to make Covered or Windowed WalkAway Slab.$(br) Sneak + Right click with an $(l:bedrockutils:tools/hammerplate_entry)Hammer Plate$() to remove.$(br) Right click with Hammer Plate to move down or up Framed or Covered WalkAway."
 		},
 		{
 			"type": "crafting",

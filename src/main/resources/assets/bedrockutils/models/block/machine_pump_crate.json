@@ -1,0 +1,10 @@
+{
+  "parent": "bedrockutils:custom/bu_pumpcrate",
+  "textures": {
+    "all": "bedrockutils:blocks/iron_block",
+    "particle": "bedrockutils:blocks/iron_block",
+    "3": "bedrockutils:blocks/cauldron_side",
+    "4": "bedrockutils:blocks/but_modularmachinedeco",
+    "5": "bedrockutils:blocks/piston_inner"
+  }
+}

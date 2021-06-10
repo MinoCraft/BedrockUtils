@@ -1,0 +1,38 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 145,
+    "height": 60,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "§5Creative Energy Block",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§5Creative Energy Block",
+          "x": 145,
+          "y": 94
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar10.png",
+          "use1Xscale": false,
+          "name": "energyprogressbar10.png",
+          "x": 168,
+          "y": 114
+        }
+      }
+    ]
+  }
+}

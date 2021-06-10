@@ -4,8 +4,10 @@
 	"category": "processmachine_category",
 	"pages": [
 		{
-			"type": "text",
-			"text": "Check specific selected slot in container or machine and output redstone comparator signal based on item number and type in configured slot.$(br)Checked block must be back the orange arrow. Right Click to open GUI and configure slot, press button to save.$(br)You can place redstone comparator on blue side"
+			"type": "spotlight",
+			"item": "bedrockutils:comparator_extended",
+			"title": "Extended Comparator",
+			"text": "$(br)Check specific selected slot in container or machine and output redstone comparator signal based on item number and type in configured slot.$(br)Checked block must be back the orange arrow. Right Click to open GUI and configure slot, press button to save.$(br)You can place redstone comparator on blue side"
 		},
 		{
 			"type": "crafting",

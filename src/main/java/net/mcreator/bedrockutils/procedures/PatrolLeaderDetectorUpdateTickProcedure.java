@@ -59,7 +59,7 @@ public class PatrolLeaderDetectorUpdateTickProcedure extends BedrockutilsModElem
 					return tileEntity.getTileData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "canWork"))) {
+		}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "rsEvent"))) {
 			if ((((Entity) world
 					.getEntitiesWithinAABB(PillagerEntity.class,
 							new AxisAlignedBB(x - (1 / 2d), (y + 1) - (1 / 2d), z - (1 / 2d), x + (1 / 2d), (y + 1) + (1 / 2d), z + (1 / 2d)), null)

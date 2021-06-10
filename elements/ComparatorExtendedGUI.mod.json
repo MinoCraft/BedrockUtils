@@ -2,9 +2,9 @@
   "_fv": 18,
   "_type": "gui",
   "definition": {
-    "type": 1,
+    "type": 0,
     "width": 176,
-    "height": 166,
+    "height": 127,
     "inventoryOffsetX": 0,
     "inventoryOffsetY": 0,
     "renderBgLayer": true,
@@ -19,19 +19,8 @@
             "falpha": 0.0
           },
           "name": "Extended Comparator",
-          "x": 131,
-          "y": 43
-        }
-      },
-      {
-        "type": "textfield",
-        "data": {
-          "placeholder": "",
-          "width": 120,
-          "height": 20,
-          "name": "inputSlot",
-          "x": 132,
-          "y": 71
+          "x": 129,
+          "y": 62
         }
       },
       {
@@ -43,48 +32,75 @@
             "falpha": 0.0
           },
           "name": "Select Slot:",
-          "x": 132,
-          "y": 62
+          "x": 140,
+          "y": 75
         }
       },
       {
         "type": "label",
         "data": {
-          "text": "Selected Slot:",
-          "color": {
-            "value": -10092442,
-            "falpha": 0.0
-          },
-          "name": "Selected Slot:",
-          "x": 132,
-          "y": 98
-        }
-      },
-      {
-        "type": "label",
-        "data": {
-          "text": "<BNBT:text:selectedSlot>",
+          "text": "§6<BNBT:integer:checkMachineSlot>",
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "<BNBT:text:selectedSlot>",
-          "x": 204,
-          "y": 98
+          "name": "§6<BNBT:integer:checkMachineSlot>",
+          "x": 192,
+          "y": 92
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:displayData_1>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:displayData_1>",
+          "x": 134,
+          "y": 120
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:displayData_2>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:displayData_2>",
+          "x": 134,
+          "y": 131
         }
       },
       {
         "type": "button",
         "data": {
-          "text": "Ok",
+          "text": "-",
           "onClick": {
-            "name": "ComparatorExtendedButtonValidSlot"
+            "name": "ComparatorExtendedButtonSlot1"
           },
-          "width": 35,
+          "width": 30,
           "height": 20,
-          "name": "Ok",
-          "x": 258,
-          "y": 71
+          "name": "-",
+          "x": 140,
+          "y": 87
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "+",
+          "onClick": {
+            "name": "ComparatorExtendedButtonSlot2"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "+",
+          "x": 224,
+          "y": 87
         }
       }
     ]

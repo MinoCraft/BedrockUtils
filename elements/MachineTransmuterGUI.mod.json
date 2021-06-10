@@ -1,0 +1,462 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 180,
+    "height": 205,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 10,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "§5Transmutation Table",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§5Transmutation Table",
+          "x": 127,
+          "y": 22
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 168,
+          "y": 37
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 186,
+          "y": 37
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 204,
+          "y": 37
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 222,
+          "y": 37
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 240,
+          "y": 37
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 168,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 186,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 204,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 8,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #8",
+          "x": 222,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "Items.COAL#0"
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #9",
+          "x": 240,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_0.png",
+          "use1Xscale": false,
+          "name": "transmutprogressbar_0.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar1"
+          },
+          "name": "transmutprogressbar_1.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar2"
+          },
+          "name": "transmutprogressbar_2.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar3"
+          },
+          "name": "transmutprogressbar_3.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar4"
+          },
+          "name": "transmutprogressbar_4.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar5"
+          },
+          "name": "transmutprogressbar_5.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "transmutprogressbar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "TransmutProgressBar6"
+          },
+          "name": "transmutprogressbar_6.png",
+          "x": 168,
+          "y": 55
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar0.png",
+          "use1Xscale": false,
+          "name": "energyprogressbar0.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar1"
+          },
+          "name": "energyprogressbar1.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar2"
+          },
+          "name": "energyprogressbar2.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar3"
+          },
+          "name": "energyprogressbar3.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar4"
+          },
+          "name": "energyprogressbar4.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar5"
+          },
+          "name": "energyprogressbar5.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar6"
+          },
+          "name": "energyprogressbar6.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar7"
+          },
+          "name": "energyprogressbar7.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar8"
+          },
+          "name": "energyprogressbar8.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar9"
+          },
+          "name": "energyprogressbar9.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar10"
+          },
+          "name": "energyprogressbar10.png",
+          "x": 168,
+          "y": 82
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #10",
+          "x": 168,
+          "y": 99
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 11,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #11",
+          "x": 186,
+          "y": 99
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 12,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #12",
+          "x": 204,
+          "y": 99
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 13,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #13",
+          "x": 222,
+          "y": 99
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 14,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #14",
+          "x": 240,
+          "y": 99
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 15,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #15",
+          "x": 269,
+          "y": 99
+        }
+      }
+    ]
+  }
+}

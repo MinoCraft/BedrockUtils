@@ -7,12 +7,12 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.bedrockutils.item.BedrockFragmentItem;
+import net.mcreator.bedrockutils.BedrockutilsModVariables;
 import net.mcreator.bedrockutils.BedrockutilsModElements;
 import net.mcreator.bedrockutils.BedrockutilsMod;
 
@@ -49,60 +49,17 @@ public class BedrockBreakerRedstoneOnProcedure extends BedrockutilsModElements.M
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		double breakXPos = 0;
+		double breakYPos = 0;
+		double breakZPos = 0;
+		breakXPos = (double) (BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos);
+		breakYPos = (double) (BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos);
+		breakZPos = (double) (BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos);
 		if ((!((world instanceof World ? (((World) world).getDimensionKey()) : World.OVERWORLD) == (World.THE_END)))) {
-			if (((new Object() {
-				public double getValue(IWorld world, BlockPos pos, String tag) {
-					TileEntity tileEntity = world.getTileEntity(pos);
-					if (tileEntity != null)
-						return tileEntity.getTileData().getDouble(tag);
-					return -1;
-				}
-			}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakYPos")) > 1)) {
-				if (((world.getBlockState(new BlockPos((int) (new Object() {
-					public double getValue(IWorld world, BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakXPos")), (int) (new Object() {
-					public double getValue(IWorld world, BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakYPos")), (int) (new Object() {
-					public double getValue(IWorld world, BlockPos pos, String tag) {
-						TileEntity tileEntity = world.getTileEntity(pos);
-						if (tileEntity != null)
-							return tileEntity.getTileData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakZPos"))))).getBlock() == Blocks.BEDROCK.getDefaultState()
-						.getBlock())) {
-					world.destroyBlock(new BlockPos((int) (new Object() {
-						public double getValue(IWorld world, BlockPos pos, String tag) {
-							TileEntity tileEntity = world.getTileEntity(pos);
-							if (tileEntity != null)
-								return tileEntity.getTileData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakXPos")), (int) (new Object() {
-						public double getValue(IWorld world, BlockPos pos, String tag) {
-							TileEntity tileEntity = world.getTileEntity(pos);
-							if (tileEntity != null)
-								return tileEntity.getTileData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakYPos")), (int) (new Object() {
-						public double getValue(IWorld world, BlockPos pos, String tag) {
-							TileEntity tileEntity = world.getTileEntity(pos);
-							if (tileEntity != null)
-								return tileEntity.getTileData().getDouble(tag);
-							return -1;
-						}
-					}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakZPos"))), false);
+			if (((breakYPos) > 1)) {
+				if (((world.getBlockState(new BlockPos((int) (breakXPos), (int) (breakYPos), (int) (breakZPos)))).getBlock() == Blocks.BEDROCK
+						.getDefaultState().getBlock())) {
+					world.destroyBlock(new BlockPos((int) (breakXPos), (int) (breakYPos), (int) (breakZPos)), false);
 					if (world instanceof World && !world.isRemote()) {
 						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
@@ -116,28 +73,7 @@ public class BedrockBreakerRedstoneOnProcedure extends BedrockutilsModElements.M
 					}
 					if ((Math.random() < 0.4)) {
 						if (world instanceof World && !world.isRemote()) {
-							ItemEntity entityToSpawn = new ItemEntity((World) world, (new Object() {
-								public double getValue(IWorld world, BlockPos pos, String tag) {
-									TileEntity tileEntity = world.getTileEntity(pos);
-									if (tileEntity != null)
-										return tileEntity.getTileData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakXPos")), (new Object() {
-								public double getValue(IWorld world, BlockPos pos, String tag) {
-									TileEntity tileEntity = world.getTileEntity(pos);
-									if (tileEntity != null)
-										return tileEntity.getTileData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakYPos")), (new Object() {
-								public double getValue(IWorld world, BlockPos pos, String tag) {
-									TileEntity tileEntity = world.getTileEntity(pos);
-									if (tileEntity != null)
-										return tileEntity.getTileData().getDouble(tag);
-									return -1;
-								}
-							}.getValue(world, new BlockPos((int) x, (int) y, (int) z), "BreakZPos")),
+							ItemEntity entityToSpawn = new ItemEntity((World) world, (breakXPos), (breakYPos), (breakZPos),
 									new ItemStack(BedrockFragmentItem.block, (int) (1)));
 							entityToSpawn.setPickupDelay((int) 10);
 							entityToSpawn.setNoDespawn();

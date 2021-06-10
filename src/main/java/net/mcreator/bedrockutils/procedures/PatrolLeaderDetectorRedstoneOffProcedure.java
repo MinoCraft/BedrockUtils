@@ -51,7 +51,7 @@ public class PatrolLeaderDetectorRedstoneOffProcedure extends BedrockutilsModEle
 			TileEntity _tileEntity = world.getTileEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_tileEntity != null)
-				_tileEntity.getTileData().putBoolean("canWork", (false));
+				_tileEntity.getTileData().putBoolean("rsEvent", (false));
 			if (world instanceof World)
 				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_transmuter"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_transmuter",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_transmuter",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_transmuter",
+      "y": 270
+    }
+  }
+}

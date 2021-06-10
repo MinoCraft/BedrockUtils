@@ -1,0 +1,10 @@
+{
+  "parent": "bedrockutils:custom/bu_fluidtank",
+  "textures": {
+    "all": "bedrockutils:blocks/barrel_side",
+    "particle": "bedrockutils:blocks/barrel_side",
+    "0": "bedrockutils:blocks/blast_furnace_top",
+    "1": "bedrockutils:blocks/but_modularmachinedeco",
+    "3": "bedrockutils:blocks/barrel_side"
+  }
+}

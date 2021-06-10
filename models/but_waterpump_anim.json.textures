@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "main": "but_waterpump_anim"
+      },
+      "name": "default"
+    }
+  }
+}

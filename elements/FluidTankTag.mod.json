@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:FluidTank"
+      },
+      {
+        "value": "CUSTOM:FluidTank0"
+      },
+      {
+        "value": "CUSTOM:FluidTank1"
+      },
+      {
+        "value": "CUSTOM:FluidTank2"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "fluid_tank",
+    "namespace": "mod"
+  }
+}

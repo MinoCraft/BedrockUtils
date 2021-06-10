@@ -1,0 +1,18 @@
+{
+	"name": "Wither Maker",
+	"icon": "bedrockutils:machine_wither_maker",
+	"category": "processmachine_category",
+	"pages": [
+		
+		
+		{
+			"type": "spotlight",
+			"item": "bedrockutils:machine_wither_maker",
+			"title": "Wither Maker",
+			"text": "$(br)Just spawn Wither Boss for you!$(br)Need 3x3x3 area 8 blocks below.$(br)Place Wither Skull and Soul Sand in their respectives slots inside machine.$(br)Take $(6)200 RF/t$() when activate with redstone signal and $(6)1000 RF$()/ placed blocks" 
+		},
+		{
+			"type": "enchanterwithermakerrecipe_template"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+  "parent": "bedrockutils:custom/bu_withermaker",
+  "textures": {
+    "all": "bedrockutils:blocks/witherside",
+    "particle": "bedrockutils:blocks/witherside",
+    "0": "bedrockutils:blocks/blast_furnace_top",
+    "1": "bedrockutils:blocks/glass",
+    "2": "bedrockutils:blocks/bu_wither_wip"
+  }
+}

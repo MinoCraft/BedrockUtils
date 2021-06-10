@@ -1,14 +1,13 @@
 package net.mcreator.bedrockutils.procedures;
 
-import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.EnumProperty;
 import net.minecraft.state.DirectionProperty;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.bedrockutils.BedrockutilsModVariables;
 import net.mcreator.bedrockutils.BedrockutilsModElements;
 import net.mcreator.bedrockutils.BedrockutilsMod;
 
@@ -59,34 +58,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.DOWN)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", x);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", (y - 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", z);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.DOWN)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) x;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) (y - 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) z;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		} else if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -101,34 +79,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.UP)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", x);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", (y + 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", z);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.UP)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) x;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) (y + 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) z;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		} else if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -143,34 +100,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.NORTH)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", x);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", y);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", (z - 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) x;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) y;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) (z - 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		} else if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -185,34 +121,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.SOUTH)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", x);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", y);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", (z + 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.SOUTH)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) x;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) y;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) (z + 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		} else if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -227,34 +142,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.WEST)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", (x - 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", y);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", z);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.WEST)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) (x - 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) y;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) z;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		} else if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -269,34 +163,13 @@ public class CheckBlockSetPosWithDirProcedure extends BedrockutilsModElements.Mo
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) (Math.floor(x)), (int) (Math.floor(y)), (int) (Math.floor(z))))) == Direction.EAST)) {
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakXPos", (x + 1));
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakYPos", y);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
-			if (!world.isRemote()) {
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				TileEntity _tileEntity = world.getTileEntity(_bp);
-				BlockState _bs = world.getBlockState(_bp);
-				if (_tileEntity != null)
-					_tileEntity.getTileData().putDouble("BreakZPos", z);
-				if (world instanceof World)
-					((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
-			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakXPos = (double) (x + 1);
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakYPos = (double) y;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
+			BedrockutilsModVariables.MapVariables.get(world).tempBreakZPos = (double) z;
+			BedrockutilsModVariables.MapVariables.get(world).syncData(world);
 		}
 	}
 }

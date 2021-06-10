@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "3": "cauldron_side",
+        "4": "but_modularmachinedeco",
+        "5": "piston_inner"
+      },
+      "name": "default"
+    }
+  }
+}

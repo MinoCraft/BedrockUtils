@@ -13,7 +13,6 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.widget.button.Button;
-import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -27,7 +26,6 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
-	TextFieldWidget inputSlot;
 	public ComparatorExtendedGUIGuiWindow(ComparatorExtendedGUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
@@ -36,7 +34,7 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 		this.z = container.z;
 		this.entity = container.entity;
 		this.xSize = 176;
-		this.ySize = 166;
+		this.ySize = 127;
 	}
 	private static final ResourceLocation texture = new ResourceLocation("bedrockutils:textures/comparator_extended_gui.png");
 	@Override
@@ -44,7 +42,6 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderHoveredTooltip(ms, mouseX, mouseY);
-		inputSlot.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
@@ -65,22 +62,26 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 			this.minecraft.player.closeScreen();
 			return true;
 		}
-		if (inputSlot.isFocused())
-			return inputSlot.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		inputSlot.tick();
 	}
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "Extended Comparator", 5, 6, -10092442);
-		this.font.drawString(ms, "Select Slot:", 6, 25, -10092442);
-		this.font.drawString(ms, "Selected Slot:", 6, 61, -10092442);
+		this.font.drawString(ms, "Extended Comparator", 3, 5, -10092442);
+		this.font.drawString(ms, "Select Slot:", 14, 18, -10092442);
+		this.font.drawString(ms, "\u00A76" + ((int) new Object() {
+			public double getValue(BlockPos pos, String tag) {
+				TileEntity tileEntity = world.getTileEntity(pos);
+				if (tileEntity != null)
+					return tileEntity.getTileData().getDouble(tag);
+				return 0;
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "checkMachineSlot")) + "", 66, 35, -12829636);
 		this.font.drawString(ms, "" + (new Object() {
 			public String getValue(BlockPos pos, String tag) {
 				TileEntity tileEntity = world.getTileEntity(pos);
@@ -88,7 +89,15 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 					return tileEntity.getTileData().getString(tag);
 				return "";
 			}
-		}.getValue(new BlockPos((int) x, (int) y, (int) z), "selectedSlot")) + "", 78, 61, -12829636);
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "displayData_1")) + "", 8, 63, -12829636);
+		this.font.drawString(ms, "" + (new Object() {
+			public String getValue(BlockPos pos, String tag) {
+				TileEntity tileEntity = world.getTileEntity(pos);
+				if (tileEntity != null)
+					return tileEntity.getTileData().getString(tag);
+				return "";
+			}
+		}.getValue(new BlockPos((int) x, (int) y, (int) z), "displayData_2")) + "", 8, 74, -12829636);
 	}
 
 	@Override
@@ -101,14 +110,16 @@ public class ComparatorExtendedGUIGuiWindow extends ContainerScreen<ComparatorEx
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		inputSlot = new TextFieldWidget(this.font, this.guiLeft + 6, this.guiTop + 34, 120, 20, new StringTextComponent(""));
-		ComparatorExtendedGUIGui.guistate.put("text:inputSlot", inputSlot);
-		inputSlot.setMaxStringLength(32767);
-		this.children.add(this.inputSlot);
-		this.addButton(new Button(this.guiLeft + 132, this.guiTop + 34, 35, 20, new StringTextComponent("Ok"), e -> {
+		this.addButton(new Button(this.guiLeft + 14, this.guiTop + 30, 30, 20, new StringTextComponent("-"), e -> {
 			if (true) {
 				BedrockutilsMod.PACKET_HANDLER.sendToServer(new ComparatorExtendedGUIGui.ButtonPressedMessage(0, x, y, z));
 				ComparatorExtendedGUIGui.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
+		this.addButton(new Button(this.guiLeft + 98, this.guiTop + 30, 30, 20, new StringTextComponent("+"), e -> {
+			if (true) {
+				BedrockutilsMod.PACKET_HANDLER.sendToServer(new ComparatorExtendedGUIGui.ButtonPressedMessage(1, x, y, z));
+				ComparatorExtendedGUIGui.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
 	}

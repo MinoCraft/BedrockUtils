@@ -4,7 +4,9 @@
 	"category": "enchanter_category",
 	"pages": [
 		{
-			"type": "text",
+			"type": "spotlight",
+			"item": "bedrockutils:machine_enchanter",
+			"title": "Bedrock Enchanter",
 			"text": "Use a writable book with differents items and few experience levels to obtain enchanted book with a selected enchantement. Bedrock Enchanter alone is useless, you need Pedestal to put infused item. Enchanter is multi block structure, you can sneak right-click on enchanter to visualise what is wrong."
 		},
 		{

@@ -15,6 +15,7 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.IBlockReader;
@@ -65,7 +66,8 @@ import net.minecraft.block.HorizontalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorRedstoneOnProcedure;
+import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnUpdateTickProcedure;
+import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnNeighbourBlockChangesProcedure;
 import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnBlockRightClickedProcedure;
 import net.mcreator.bedrockutils.procedures.LogicBlockAnalogicComparatorOnBlockAddedProcedure;
 import net.mcreator.bedrockutils.itemgroup.BedrockUtilsItemGroup;
@@ -75,6 +77,7 @@ import net.mcreator.bedrockutils.BedrockutilsModElements;
 import javax.annotation.Nullable;
 
 import java.util.stream.IntStream;
+import java.util.Random;
 import java.util.Map;
 import java.util.List;
 import java.util.HashMap;
@@ -194,6 +197,7 @@ public class LogicBlockAnalogicComparatorBlock extends BedrockutilsModElements.M
 			int x = pos.getX();
 			int y = pos.getY();
 			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("x", x);
@@ -211,16 +215,33 @@ public class LogicBlockAnalogicComparatorBlock extends BedrockutilsModElements.M
 			int y = pos.getY();
 			int z = pos.getZ();
 			if (world.getRedstonePowerFromNeighbors(new BlockPos(x, y, z)) > 0) {
-				{
-					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("x", x);
-					$_dependencies.put("y", y);
-					$_dependencies.put("z", z);
-					$_dependencies.put("world", world);
-					LogicBlockAnalogicComparatorRedstoneOnProcedure.executeProcedure($_dependencies);
-				}
 			} else {
 			}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LogicBlockAnalogicComparatorOnNeighbourBlockChangesProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void tick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
+			super.tick(state, world, pos, random);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				LogicBlockAnalogicComparatorOnUpdateTickProcedure.executeProcedure($_dependencies);
+			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 5);
 		}
 
 		@Override

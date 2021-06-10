@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "bedrockutils:block/machine_water_pump"
+    },
+    "facing=east": {
+      "model": "bedrockutils:block/machine_water_pump",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "bedrockutils:block/machine_water_pump",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "bedrockutils:block/machine_water_pump",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,752 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 19,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "§0§lOrganic Material Worker",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0§lOrganic Material Worker",
+          "x": 130,
+          "y": 25
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_gui_energycomponent.png",
+          "use1Xscale": false,
+          "name": "bu_gui_energycomponent.png",
+          "x": 16,
+          "y": 28
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0§n§lEnergy:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0§n§lEnergy:",
+          "x": 24,
+          "y": 36
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0Cost: §6<BNBT:integer:energyCost> §0RF/i",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0Cost: §6<BNBT:integer:energyCost> §0RF/i",
+          "x": 24,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0Internal Cell:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0Internal Cell:",
+          "x": 24,
+          "y": 56
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§6<BNBT:integer:getEnergy>§0/§6<BNBT:integer:getCapacity>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§6<BNBT:integer:getEnergy>§0/§6<BNBT:integer:getCapacity>",
+          "x": 24,
+          "y": 65
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0Tank: §6<BNBT:integer:getFluidAmount> §0mB",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0Tank: §6<BNBT:integer:getFluidAmount> §0mB",
+          "x": 24,
+          "y": 126
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0§n§lUpgrade:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0§n§lUpgrade:",
+          "x": 24,
+          "y": 151
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 142,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 142,
+          "y": 101
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 198,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 30,
+          "y": 164
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 63,
+          "y": 164
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 94,
+          "y": 164
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 240,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_gui_upgradecomponent.png",
+          "use1Xscale": false,
+          "name": "bu_gui_upgradecomponent.png",
+          "x": 16,
+          "y": 144
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar1"
+          },
+          "name": "energyprogressbar1.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar2"
+          },
+          "name": "energyprogressbar2.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar3"
+          },
+          "name": "energyprogressbar3.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar4"
+          },
+          "name": "energyprogressbar4.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar5"
+          },
+          "name": "energyprogressbar5.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar6"
+          },
+          "name": "energyprogressbar6.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar7"
+          },
+          "name": "energyprogressbar7.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar8"
+          },
+          "name": "energyprogressbar8.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar9"
+          },
+          "name": "energyprogressbar9.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "energyprogressbar10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "EnergyProgressBar10"
+          },
+          "name": "energyprogressbar10.png",
+          "x": 26,
+          "y": 75
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidprogressbar0.png",
+          "use1Xscale": false,
+          "name": "fluidprogressbar0.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar1"
+          },
+          "name": "fluidorganicprogressbar1.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar2"
+          },
+          "name": "fluidorganicprogressbar2.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar3"
+          },
+          "name": "fluidorganicprogressbar3.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar4"
+          },
+          "name": "fluidorganicprogressbar4.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar5"
+          },
+          "name": "fluidorganicprogressbar5.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar6"
+          },
+          "name": "fluidorganicprogressbar6.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar7"
+          },
+          "name": "fluidorganicprogressbar7.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar8"
+          },
+          "name": "fluidorganicprogressbar8.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar9"
+          },
+          "name": "fluidorganicprogressbar9.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar10"
+          },
+          "name": "fluidorganicprogressbar10.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fluidorganicprogressbar11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OrganicProgressBar11"
+          },
+          "name": "fluidorganicprogressbar11.png",
+          "x": 269,
+          "y": 51
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0Amount: §6<BNBT:integer:outputFluidAmount> §0mB",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0Amount: §6<BNBT:integer:outputFluidAmount> §0mB",
+          "x": 24,
+          "y": 115
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:number:itemValue1>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "OmwViewItemValue1"
+          },
+          "name": "<BNBT:number:itemValue1>",
+          "x": 162,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:number:itemValue2>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "displayCondition": {
+            "name": "OmwViewItemValue2"
+          },
+          "name": "<BNBT:number:itemValue2>",
+          "x": 162,
+          "y": 105
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_gui_fluidcomponent.png",
+          "use1Xscale": false,
+          "name": "bu_gui_fluidcomponent.png",
+          "x": 16,
+          "y": 97
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "§0§n§lFluid:",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "§0§n§lFluid:",
+          "x": 24,
+          "y": 104
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "omw_testgui.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwCraftProgress0"
+          },
+          "name": "omw_testgui.png",
+          "x": 140,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "omw_testgui_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwCraftProgress1"
+          },
+          "name": "omw_testgui_1.png",
+          "x": 140,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "omw_testgui_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwCraftProgress2"
+          },
+          "name": "omw_testgui_2.png",
+          "x": 140,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "omw_testgui_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwCraftProgress3"
+          },
+          "name": "omw_testgui_3.png",
+          "x": 140,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "resistorgui_0.png",
+          "use1Xscale": false,
+          "name": "resistorgui_0.png",
+          "x": 204,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "resistorgui_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwResistorProgress0"
+          },
+          "name": "resistorgui_1.png",
+          "x": 204,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "omw_recycleprogressbar0.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress0"
+          },
+          "name": "omw_recycleprogressbar0.png",
+          "x": 140,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress1"
+          },
+          "name": "bu_progressbarsgen_1.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress2"
+          },
+          "name": "bu_progressbarsgen_2.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress3"
+          },
+          "name": "bu_progressbarsgen_3.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress4"
+          },
+          "name": "bu_progressbarsgen_4.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress5"
+          },
+          "name": "bu_progressbarsgen_5.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bu_progressbarsgen_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "OmwRecycleProgress6"
+          },
+          "name": "bu_progressbarsgen_6.png",
+          "x": 156,
+          "y": 83
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 7,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #7",
+          "x": 464,
+          "y": 200
+        }
+      }
+    ]
+  }
+}

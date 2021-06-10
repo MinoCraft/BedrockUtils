@@ -1,0 +1,9 @@
+{
+  "parent": "bedrockutils:custom/bu_framedpillertop",
+  "textures": {
+    "all": "bedrockutils:blocks/iron_block",
+    "particle": "bedrockutils:blocks/iron_block",
+    "0": "bedrockutils:blocks/iron_block",
+    "1": "bedrockutils:blocks/bedrock"
+  }
+}

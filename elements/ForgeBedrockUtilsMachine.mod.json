@@ -1,0 +1,41 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BedrockBreaker"
+      },
+      {
+        "value": "CUSTOM:PatrolLeaderDetector"
+      },
+      {
+        "value": "CUSTOM:BlockBedrockPedestal"
+      },
+      {
+        "value": "CUSTOM:MachineWitherMaker"
+      },
+      {
+        "value": "CUSTOM:MachineWirelessEnergyTransmiter"
+      },
+      {
+        "value": "CUSTOM:MachineWirelessActivator"
+      },
+      {
+        "value": "CUSTOM:MachineEnchanter"
+      },
+      {
+        "value": "CUSTOM:MachineTransmuter"
+      },
+      {
+        "value": "CUSTOM:MachineWirelessRedstoneReader"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "bedrockutils_machine",
+    "namespace": "forge"
+  }
+}

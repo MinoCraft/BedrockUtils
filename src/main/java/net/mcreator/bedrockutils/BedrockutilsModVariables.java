@@ -108,6 +108,9 @@ public class BedrockutilsModVariables {
 
 	public static class MapVariables extends WorldSavedData {
 		public static final String DATA_NAME = "bedrockutils_mapvars";
+		public double tempBreakXPos = 0;
+		public double tempBreakYPos = 0;
+		public double tempBreakZPos = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -118,10 +121,16 @@ public class BedrockutilsModVariables {
 
 		@Override
 		public void read(CompoundNBT nbt) {
+			tempBreakXPos = nbt.getDouble("tempBreakXPos");
+			tempBreakYPos = nbt.getDouble("tempBreakYPos");
+			tempBreakZPos = nbt.getDouble("tempBreakZPos");
 		}
 
 		@Override
 		public CompoundNBT write(CompoundNBT nbt) {
+			nbt.putDouble("tempBreakXPos", tempBreakXPos);
+			nbt.putDouble("tempBreakYPos", tempBreakYPos);
+			nbt.putDouble("tempBreakZPos", tempBreakZPos);
 			return nbt;
 		}
 

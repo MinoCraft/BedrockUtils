@@ -1,0 +1,11 @@
+{
+  "parent": "bedrockutils:custom/bedrockutilstransmuter",
+  "textures": {
+    "all": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "particle": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "1": "bedrockutils:blocks/bedrockutils_enchanter_main",
+    "2": "bedrockutils:blocks/utilitary_witherbedrock",
+    "3": "bedrockutils:blocks/diamond_block",
+    "missing": "bedrockutils:blocks/"
+  }
+}

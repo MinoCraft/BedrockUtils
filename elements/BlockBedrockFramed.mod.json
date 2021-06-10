@@ -37,7 +37,7 @@
       "Decorative Wither Proof Block",
       "also emit light !"
     ],
-    "hardness": 30.0,
+    "hardness": 20.0,
     "resistance": 2000.0,
     "hasGravity": false,
     "isWaterloggable": true,
@@ -108,6 +108,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onBlockAdded": {
+      "name": "BlockBedrockFramedPillarCT"
+    },
+    "onNeighbourBlockChanges": {
+      "name": "BlockBedrockFramedPillarCTUpdate"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

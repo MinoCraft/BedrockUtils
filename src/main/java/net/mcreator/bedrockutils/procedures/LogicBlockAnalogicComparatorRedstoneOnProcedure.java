@@ -1,13 +1,11 @@
 package net.mcreator.bedrockutils.procedures;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.tileentity.TileEntity;
-import net.minecraft.state.Property;
-import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.bedrockutils.block.LogicBlockAnalogicComparatorOnBlock;
 import net.mcreator.bedrockutils.BedrockutilsModElements;
 import net.mcreator.bedrockutils.BedrockutilsMod;
 
@@ -45,34 +43,14 @@ public class LogicBlockAnalogicComparatorRedstoneOnProcedure extends Bedrockutil
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		double readPower = 0;
-		{
+		if (!world.isRemote()) {
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-			BlockState _bs = LogicBlockAnalogicComparatorOnBlock.block.getDefaultState();
-			BlockState _bso = world.getBlockState(_bp);
-			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-				Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-				if (_property != null && _bs.get(_property) != null)
-					try {
-						_bs = _bs.with(_property, (Comparable) entry.getValue());
-					} catch (Exception e) {
-					}
-			}
-			TileEntity _te = world.getTileEntity(_bp);
-			CompoundNBT _bnbt = null;
-			if (_te != null) {
-				_bnbt = _te.write(new CompoundNBT());
-				_te.remove();
-			}
-			world.setBlockState(_bp, _bs, 3);
-			if (_bnbt != null) {
-				_te = world.getTileEntity(_bp);
-				if (_te != null) {
-					try {
-						_te.read(_bso, _bnbt);
-					} catch (Exception ignored) {
-					}
-				}
-			}
+			TileEntity _tileEntity = world.getTileEntity(_bp);
+			BlockState _bs = world.getBlockState(_bp);
+			if (_tileEntity != null)
+				_tileEntity.getTileData().putBoolean("rsEvent", (true));
+			if (world instanceof World)
+				((World) world).notifyBlockUpdate(_bp, _bs, _bs, 3);
 		}
 	}
 }

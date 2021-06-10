@@ -79,7 +79,7 @@
     "breakHarvestLevel": 3,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "ENCHANTMENT_TABLE"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,

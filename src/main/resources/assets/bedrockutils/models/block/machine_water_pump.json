@@ -1,0 +1,8 @@
+{
+  "parent": "bedrockutils:custom/but_waterpump_anim",
+  "textures": {
+    "all": "bedrockutils:blocks/iron_block",
+    "particle": "bedrockutils:blocks/iron_block",
+    "main": "bedrockutils:blocks/but_waterpump_anim"
+  }
+}

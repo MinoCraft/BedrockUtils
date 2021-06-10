@@ -115,11 +115,11 @@
     "onBlockAdded": {
       "name": "LogicBlockAnalogicComparatorOnBlockAdded"
     },
+    "onNeighbourBlockChanges": {
+      "name": "LogicBlockAnalogicComparatorOnNeighbourBlockChanges"
+    },
     "onTickUpdate": {
       "name": "LogicBlockAnalogicComparatorOnUpdateTick"
-    },
-    "onRedstoneOff": {
-      "name": "LogicBlockAnalogicComparatorOnRedstoneOff"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
